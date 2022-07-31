@@ -1,0 +1,203 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Font Family from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap");
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(30, 38%, 92%);
+}
+
+.product-container {
+  width: 80%;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px rgb(150, 147, 147);
+}
+
+.product-image {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.description {
+  padding: 20px;
+}
+
+.product-type {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.product-name {
+  text-transform: capitalize;
+  font-family: "Fraunces", serif;
+  color: hsl(212, 21%, 14%);
+  font-size: 30px;
+}
+
+.details {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  margin: 15px 0;
+}
+
+.price-tag {
+  display: flex;
+  align-items: center;
+}
+
+.current-price {
+  font-size: 30px;
+  font-family: "Fraunces", serif;
+  margin-right: 20px;
+  color: hsl(158, 36%, 37%);
+}
+
+.former-price {
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+}
+
+.add-to-cart {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: hsl(158, 36%, 37%);
+  margin: 10px 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+}
+
+.add-to-cart :first-child {
+  margin-right: 10px;
+  font-size: 17px;
+}
+
+.add-to-cart:hover {
+  background-color: hsl(158, 55%, 20%);
+}
+
+/* LARGER MOBILES */
+@media screen and (min-width: 500px) {
+  .product-container {
+    width: 70%;
+  }
+
+  .description {
+    padding: 30px;
+  }
+
+  .product-name {
+    font-size: 35px;
+  }
+}
+
+/* TABLETS */
+@media screen and (min-width: 600px) {
+  .product-container {
+    width: 60%;
+  }
+
+  .description {
+    padding: 30px;
+  }
+
+  .product-name {
+    font-size: 35px;
+  }
+}
+
+/* DESKTOP SCREEN */
+@media screen and (min-width: 700px) {
+  .container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
+
+  .product-container {
+    width: 60vw;
+    height: 40vw;
+    max-width: 550px;
+    max-height: 370px;
+    flex-direction: row;
+  }
+
+  .product-image {
+    content: url("./images/image-product-desktop.jpg");
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .description {
+    padding: 10px;
+    width: 50%;
+    height: 100%;
+    padding: 2%;
+  }
+
+  .product-type {
+    font-size: 12px;
+  }
+
+  .product-name {
+    font-size: 25px;
+  }
+
+  .details {
+    font-size: 13px;
+  }
+
+  .add-to-cart {
+    margin: 8% 0;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .description {
+    padding: 21px;
+  }
+
+  .product-type {
+    font-size: 14px;
+  }
+
+  .product-name {
+    font-size: 30px;
+  }
+
+  .details {
+    font-size: 15px;
+  }
+
+  .add-to-cart {
+    margin: 20px 0;
+  }
+}
